@@ -1,5 +1,9 @@
 --- 
 
+import Footer  from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import '../styles/global.css';
+
 const skillColour = "navy";
 const fontWeight= "bold";
 const textCase = "uppercase";
@@ -41,9 +45,7 @@ const goal = 3;
 
 	<body>
 
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">blog</a>
+		<Header/>
 
 		<h1>About Me</h1>
 		<h2>... and my new Astro site!</h2>	
@@ -80,6 +82,7 @@ const goal = 3;
 
 		{ goal === 3 ? <p> my goal is to finish on {goal} days </p> :   <p> my goal is not to finish on {goal} days </p>}
 
+<Footer/>
 		
 	</body>
 </html>
